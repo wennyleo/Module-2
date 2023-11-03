@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A web application of gellato store"/>
+        <meta name="keywords" content="Gellato, Ice Cream" />
+        <meta name="author" content="Wenny" />
+        <title>Gelato Space | Fill your heat with sweet and joy</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+<body id="theme">
+      <!--Header Section-->
+    <section class="header">
+        <div class="header-container">
+            <nav>
+              <a href="index.html">
+                  <img id="logo"class="light" src="images/logo.png" alt="gelato space's light mode logo" />
+                  <img id="logo"class="dark" src="images/logo-darkmode.png" alt="gelato space's dark mode logo" />
+                </picture></a>
+
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="#BestSeller">Best Seller</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#title-survey">Form</a></li>
+                    </ul>
+                  </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </section>
+
+    <main>
+    <!--Banner Text -->  
+    <section class="banner">
+      <div class="banner-text">
+              <h1>Sweet <span>& Melt</span> </h1>
+              <h2>fills your day <span>with something sweet</span></h2>
+              <p>Click the button below to change between dark and light mode for this page
+              </p>
+            <!--Learn More Button-->
+            <div class="btn">
+                <button type="button" id="mode-btn" class="dark-mode-btn" onclick="modeBtn()">Dark Mode</button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!--SLIDER -->  
+    <section class="slider-section">
+      <div class="slider">
+          <div class="hero-parent">
+            <img src="./images/banner1.jpg" id="slider1" alt="strawberry gelato on cup">
+            <img src="./images/banner2.jpg" id="slider2" alt="chocolate and matcha gelato">
+            <img src="./images/banner3.jpg" id="slider3" alt="cherry gelato on cone">
+          </div>
+
+          <nav class="hero-slider">
+            <a href="#slider1"></a>
+            <a href="#slider2"></a>
+            <a href="#slider3"></a>
+          </nav>
+        </div>
+      </section>
+
+  
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <h2 id="BestSeller">Best Seller</h2>
+            <p>In hac habitasse platea dictumst.</p>
+            <div class="gallery">
+                <div class="gallery-img">
+                  <picture>
+                    <source media="(max-width:600px)" srcset="images/gelato-600.jpg" >
+                    <img src="images/banner1.jpg" alt="Gelato strawberry with srpinkle">
+                  </picture>
+                    
+                </div>
+
+                <div class="gallery-img">
+                    <img src="images/banner2.jpg" alt="Gelato chocolate and matcha">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="images/banner3.jpg" alt="Gelato in shop">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="images/banner1.jpg" alt="Gelato strawberry with srpinkle in cup">
+                </div>
+
+                <div class="gallery-img">
+                    <img src="images/banner1.jpg" alt="Gelato strawberry with srpinkle on table">
+                </div>                
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Form Section-->
+  <section class="survey">
+
+      <!--Form - title-->
+      <div class="survey-text">
+        <h2 id="title-survey">Subscribe Form</h2>
+        <p id="description-survey">Get more discount and offer by subscribing us</p>
+      </div>
+
+      <div class="survey-container">
+        <form id="survey-form"> 
+          <div class="form-group">
+            <label id="name-label" for="name">Name *</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+          </div>
+
+          <div class="form-group">
+            <label id="email-label" for="email">Email *</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="your@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label id="date-label" for="birthdate">Birthdate: *</label>
+            <input type="date" id="birthdate" name="birthdate" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <p>Which option describes you best?</p>
+                  <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Unemployed</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                  </select>
+            </div>
+
+
+            <div class="form-group">
+              <p>Any comments or suggestions?</p>
+              <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."> </textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button"> Submit </button>
+            </div>
+
+        </form>
+      </div>
+  </section>
+</main>
+
+
+<!--Footer Section-->
+<footer>
+  <ul>
+    <li><a class="fb-icon" href="#" id="fb-icon">
+      <img class="light" src="images/facebook.png" alt="facebook icon light mode">
+      <img class="dark" src="images/fb-dark.png" alt="facebook icon dark mode">
+    </a></li>
+    <li><a class="ig-icon" href="#" id="ig-icon">
+      <img class="light" src="images/instagram.png" alt="instagram icon light mode">
+      <img class="dark" src="images/ig-dark.png" alt="instagram icon dark mode">
+    </a></li>
+    <li><a class="twitter-icon" href="#" id="twitter-icon">
+      <img class="light" src="images/twitter.png" alt="twitter icon dark mode">
+      <img class="dark" src="images/tw-dark.png" alt="twitter icon dark mode">
+    </a></li>
+    <li><a class="pinterest-icon" href="#" id="pinterest-icon">
+      <img class="light" src="images/pinterest.png" alt="pinterest icon dark mode">
+      <img class="dark" src="images/pinterest-dark.png" alt="pinterest icon dark mode">
+    </a></li>
+  </ul>
+    <p>Copyright &copy 2023 | <a href="index.html"> GelatoSpace </a>
+    </p>
+</footer> 
+
+
+<!--Java Script-->
+    <script src="js/script.js"></script>
+</body>
+</html>
