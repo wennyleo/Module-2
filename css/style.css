@@ -19,7 +19,7 @@ html, body {
     min-height: 5vh;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px 0 rgba(56, 20, 20, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(56, 20, 20, 0.488);
     /***Sticky Nav Bar***/
     position: -webkit-sticky;
     position: sticky;
@@ -68,7 +68,7 @@ nav img.light {
 }
 
 .nav-links ul li a {
-    color :grey;
+    color :rgb(36, 36, 36);
     text-decoration: none;
 }
 
@@ -147,7 +147,7 @@ nav .fa {
     background-color: rgb(255, 255, 255);;
     border-radius: 20px;
     cursor: pointer;
-    color : #fb7381;
+    color : #d62638;
 }
 
 .btn #mode-btn:hover{
